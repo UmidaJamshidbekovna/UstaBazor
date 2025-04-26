@@ -1,0 +1,44 @@
+{
+    "Repetitorlar": [
+      "Ingliz tili",
+      "Matematika",
+      "Rus tili",
+      "Boshlang‘ich maktab",
+      "Musiqa"
+    ],
+    "Tamirlash ustalari": [
+      "Santexniklar",
+      "Elektriklar",
+      "Plitka qo‘yuvchilar",
+      "Shtukaturlar",
+      "Bo‘lib-bo‘lib ta’mirlash"
+    ],
+    "Gozallik ustalari": [
+      "Makiyaj",
+      "Manikyur",
+      "Soch turmaklash",
+      "Epilatsiya",
+      "Stilistlar"
+    ],
+    "Frilanserlar": [
+      "Dizaynerlar",
+      "Matnlar bilan ishlash",
+      "Marketing",
+      "Tizim administratorlari",
+      "IT-autsorsing"
+    ],
+    "Uy xodimlari": [
+      "Uy xodimlari",
+      "Haydovchilar",
+      "It, sayr qildirish",
+      "Parrandachilar",
+      "Uy yordamchilari"
+    ],
+    "Buxgalter va yuristlar": [
+      "Yuristlar",
+      "Buxgalterlar",
+      "Rieltorlar",
+      "Biznes konsultantlar",
+      "Biznes trenerlar"
+    ]
+  }

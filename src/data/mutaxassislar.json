@@ -1,0 +1,33 @@
+
+[
+    {
+        "id": 1,
+        "name": "Quruvchi",
+        "details": "Qurilish ishlari, ta'mirlash va rekonstruksiya xizmatlarini taqdim etadi."
+    },
+    {
+        "id": 2,
+        "name": "Santexnik",
+        "details": "Suv quvurlari va isitish tizimlarini ta'mirlash va o'rnatish bo'yicha mutaxassis."
+      },
+      {
+        "id": 3,
+        "name": "Mardikor",
+        "details": "Yuk tashish, ko'chirish va boshqa jismoniy ishlarni bajaradi."
+      },
+      {
+        "id": 4,
+        "name": "Psixolog",
+        "details": "Ruhiy salomatlik bo'yicha maslahatlar va psixologik yordam ko'rsatadi.."
+      },
+      {
+        "id": 5,
+        "name": "Tarbiyachi",
+        "details": "Bolalarni tarbiyalash va ta'lim berish bilan shug'ullanadi."
+      },
+      {
+        "id": 6,
+        "name": "Farrosh",
+        "details": "Binolarni tozalash va gigiyena xizmatlarini ta'minlaydi."
+      }
+]
