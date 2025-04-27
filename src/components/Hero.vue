@@ -2,10 +2,7 @@
 // <!-- images -->
 import heroNav from "@/assets/img/heroNav.png"
 import workingSession from "@/assets/img/workingSession.png"
-import vector2 from "@/assets/img/Vector2.png"
-import vector3 from "@/assets/img/Vector3.png"
-import vector4 from "@/assets/img/Vector4.png"
-import vector5 from "@/assets/img/Vector5.png"
+
 
 // <!-- Data Jsons -->
 import mutaxassislar from "@/data/mutaxassislar.json"
@@ -41,7 +38,7 @@ import xizmat from "@/data/xizmatlar_turlari.json"
     <h1 class="font-bold text-[#034833] text-5xl leading-14 text-center">
         Mutaxassislar ro‘yxati
     </h1>
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10 cursor-pointer">
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  md:px-10 cursor-pointer">
       <div
         v-for="item in mutaxassislar"
         :key="item.id"
@@ -60,86 +57,85 @@ import xizmat from "@/data/xizmatlar_turlari.json"
 
   <section class="mx-auto sm:px-8 lg:px-12 my-30">
     <h1 class="text-[#034833] text-6xl">Uzbekistondagi mutaxassislar</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12 cursor-pointer">
-        <div
-             v-for="(items, category) in xizmat" 
-             :key="category"
-             class="text-white  bg-[#034833] hover:bg-[#83CD20] rounded-xl p-6 shadow hover:shadow-lg relative"
-        >
-             <h2 class="font-bold text-3xl text-white">{{ category }}</h2>
-             <ul>
-                <li v-for="(item, index) in items" :key="index" class="text-[#fff] leading-8">{{ item }}</li>
-            </ul>
-            <button class="font-bold bg-white text-[#034833] hover:bg-[#034833] hover:text-white text-xl py-3 px-12 rounded shadow-2xl absolute bottom-[-1] right-0 cursor-pointer">
-              Barcha  1854 fan
-            </button>
-        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mt-12 px-4 sm:px-8 lg:px-16">
+    <div
+        v-for="(items, category) in xizmat" 
+        :key="category"
+        class="group bg-[#034833] hover:bg-[#83CD20] rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-500 relative overflow-hidden"
+      >
+        <h2 class="font-bold text-2xl sm:text-3xl text-white mb-4">{{ category }}</h2>
+        <ul class="space-y-2">
+          <li v-for="(item, index) in items" :key="index" class="text-white leading-7 sm:leading-8">{{ item }}</li>
+        </ul>
+
+        <button class="font-bold bg-white text-[#034833] group-hover:bg-[#034833] group-hover:text-white text-lg sm:text-xl py-2 sm:py-4 px-6 sm:px-8 rounded shadow-lg absolute bottom-0 right-0 transition-all duration-300">
+          Barcha 1854 fan
+        </button>
+      </div>
     </div>
+
    
   </section>
 
   <section class="workingSession mx-auto sm:px-8 lg:px-12 my-30">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4">
-    <div>
-      <h1 class="text-4xl sm:text-6xl lg:text-7xl text-[#034833] font-semibold mb-6">
-        <span class="block font-bold text-[#034833] text-5xl sm:text-7xl">UstaBozor</span>
-        Qanday ishlaydi?
-      </h1>
-    </div>
-    <div>
-      <img :src="workingSession" alt="" class="w-full object-contain" />
-    </div>
-    </div>
-
-    <!-- <div class="relative mx-10 items-center space-x-4">
-  <div class="relative">
-    <i class="pi pi-file text-[#83CD20] text-8xl"></i>
-    <h3 class="text-4xl font-semibold text-[#034833]">Buyurtma qoldiring</h3>
-    <p class="text-2xl text-gray-600">Nimaga ehtiyojingiz borligini oddiy shaklda yozing</p>
-    <div class="absolute top-[-70px] right-80 w-150 hidden lg:block">
-      <img :src="vector2" alt="">
-    </div>
-  </div>
-
-  <div class="absolute right-0 top-53">
-    <div class="relative">
-      <i class="pi pi-comment text-[#83CD20] text-8xl"></i>
-      <h3 class="text-4xl font-semibold text-[#034833]">Buyurtma qoldiring</h3>
-      <p class="text-2xl text-gray-600">Nimaga ehtiyojingiz borligini oddiy shaklda yozing</p>
-      <div class="absolute top-35 right-20 w-200 hidden lg:block">
-        <img :src="vector3" alt="">
+      <div class="workingSession-left">
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl text-[#034833] font-semibold mb-6">
+          <span class="block font-bold text-[#034833] text-5xl sm:text-7xl">UstaBozor</span>
+          Qanday ishlaydi?
+        </h1>
+      </div>
+      <div class="workingSession-right">
+        <img :src="workingSession" alt="" class="w-full object-contain" />
       </div>
     </div>
-  </div>
 
-  <div class="absolute left-0 top-110">
-    <i class="pi pi-check-circle text-[#83CD20] text-8xl"></i>
-    <h3 class="text-4xl font-semibold text-[#034833]">Buyurtma qoldiring</h3>
-    <p class="text-2xl text-gray-600">Nimaga ehtiyojingiz borligini oddiy shaklda yozing</p>
-    <div class="absolute top-60 left-0 w-200 hidden lg:block">
-      <img :src="vector4" alt="">
+    <div class="relative px-4 sm:px-8 lg:px-16 py-12 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        <!-- Step 1 -->
+        <div class="relative text-center flex flex-col items-center opacity-90 translate-y-10 transition-all duration-700 ease-out hover:translate-y-0 hover:opacity-100">
+          <i class="pi pi-comment text-[#83CD20] text-7xl mb-4 animate-pulse"></i>
+          <h3 class="text-2xl font-semibold text-[#034833]">Buyurtma qoldiring</h3>
+          <p class="text-lg text-gray-600">Nimaga ehtiyojingiz borligini oddiy shaklda yozing</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative text-center flex flex-col items-center opacity-90 translate-y-10 transition-all duration-700 ease-out hover:translate-y-0 hover:opacity-100">
+          <i class="pi pi-file text-[#83CD20] text-7xl mb-4 animate-pulse"></i>
+          <h3 class="text-2xl font-semibold text-[#034833]">Usta bilan bog'laning</h3>
+          <p class="text-lg text-gray-600">Usta siz bilan tezda bog‘lanadi</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative text-center flex flex-col items-center opacity-90 translate-y-10 transition-all duration-700 ease-out hover:translate-y-0 hover:opacity-100">
+          <i class="pi pi-check-circle text-[#83CD20] text-7xl mb-4 animate-pulse"></i>
+          <h3 class="text-2xl font-semibold text-[#034833]">Kelishuvga erishing</h3>
+          <p class="text-lg text-gray-600">Shartlarni kelishib oling</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative text-center flex flex-col items-center opacity-90 translate-y-10 transition-all duration-700 ease-out hover:translate-y-0 hover:opacity-100">
+          <i class="pi pi-credit-card text-[#83CD20] text-7xl mb-4 animate-pulse"></i>
+          <h3 class="text-2xl font-semibold text-[#034833]">Xizmatdan foydalaning</h3>
+          <p class="text-lg text-gray-600">Xizmatni baholang va to‘lang</p>
+        </div>
+
+      </div>
+
+      <!-- Button -->
+      <div class="mt-16 flex justify-center">
+        <router-link
+          to="/ordered"
+          class="pi pi-send bg-green-600 text-white px-8 py-4 rounded-full hover:bg-green-700 hover:scale-105 hover:shadow-lg text-xl transition-all duration-300 flex items-center justify-center"
+        >
+          Buyurtma berish
+        </router-link>
+      </div>
     </div>
-  </div>
-
-  <div class="absolute right-0 top-160">
-    <i class="pi pi-credit-card text-[#83CD20] text-8xl"></i>
-    <h3 class="text-4xl font-semibold text-[#034833]">Buyurtma qoldiring</h3>
-    <p class="text-2xl text-gray-600">Nimaga ehtiyojingiz borligini oddiy shaklda yozing</p>
-    <div class="absolute top-50 right-10 w-150 hidden lg:block">
-      <img :src="vector5" alt="">
-    </div>
-  </div>
-
-  <div class="absolute top-310 left-[50%]">
-    <button class="pi pi-send bg-green-600 text-white px-10 py-6 rounded-full hover:bg-green-700 border-none">
-      Buyurtma berish
-    </button>
-  </div>
-</div> -->
-
   </section>
 
-  <section class="bg-[#004333] px-4 sm:px-8 lg:px-12">
+  <section class="footer bg-[#004333] px-4 sm:px-8 lg:px-12">
     <!-- Social Icons -->
     <div class=" py-10">
       <div class="flex justify-center sm:justify-end items-center space-x-6 text-3xl">
@@ -234,9 +230,5 @@ import xizmat from "@/data/xizmatlar_turlari.json"
       <h2 class="text-white text-lg">© UstaBozor. Barcha huquqlar himoyalangan.</h2>
     </div>
   </section>
-
-
-
-
 
 </template>

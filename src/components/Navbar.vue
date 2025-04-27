@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import navLogo from "@/assets/img/navLogo.png"
 import Hero from "@/components/Hero.vue"
+import Oredered from './Ordered.vue'
 
 const isMenuOpen = ref(false)
 </script>
@@ -63,7 +64,6 @@ const isMenuOpen = ref(false)
         </button>
       </div>
     </section>
-    <RouterView />
   </header>
-  <Hero/>
+  <RouterView />
 </template>

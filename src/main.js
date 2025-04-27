@@ -4,5 +4,9 @@ import 'primeicons/primeicons.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './routes'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(router)   // 🔥 Routerni bu yerda ulaymiz
+app.mount('#app')
