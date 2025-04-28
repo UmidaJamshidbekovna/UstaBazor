@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import navLogo from "@/assets/img/navLogo.png"
 import Hero from "@/components/Hero.vue"
 import Oredered from './Ordered.vue'
+import router from '@/routes'
 
 const isMenuOpen = ref(false)
 </script>
@@ -13,9 +14,9 @@ const isMenuOpen = ref(false)
       <div class="mx-auto  px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         <!-- Logo -->
-        <div class="w-32 sm:w-40 cursor-pointer">
+        <router-link to="/" class="w-32 sm:w-40 cursor-pointer">
           <img :src="navLogo" alt="Logo" />
-        </div>
+        </router-link>
 
         <!-- Region Select -->
         <div class="hidden sm:block">
@@ -35,9 +36,9 @@ const isMenuOpen = ref(false)
 
         <!-- Kirish Button -->
         <div class="hidden sm:block">
-          <button class="bg-[#034833] hover:bg-emerald-700 text-white py-2 px-6 rounded-xl transition duration-300 cursor-pointer">
+          <router-link to="/signim" class="bg-[#034833] hover:bg-emerald-700 text-white py-2 px-6 rounded-xl transition duration-300 cursor-pointer">
             Kirish
-          </button>
+          </router-link>
         </div>
 
         <!-- Mobile menu toggle -->

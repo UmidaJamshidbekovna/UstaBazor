@@ -11,6 +11,7 @@ import xizmat from "@/data/xizmatlar_turlari.json"
 </script>
 
 <template>
+  <!-- Main -->
   <section class="main-hero bg-[#034833] py-12 md:py-16 overflow-hidden">
     <div class="hero max-w-[1400px] mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         
@@ -33,7 +34,8 @@ import xizmat from "@/data/xizmatlar_turlari.json"
 
     </div>
    </section>
-
+   
+   <!-- Mutaxassislar ro‘yxati -->
   <section class="listingJobs mt-12">
     <h1 class="font-bold text-[#034833] text-5xl leading-14 text-center">
         Mutaxassislar ro‘yxati
@@ -55,6 +57,7 @@ import xizmat from "@/data/xizmatlar_turlari.json"
     </div>
   </section>
 
+   <!-- Uzbekistondagi mutaxassislar -->
   <section class="mx-auto sm:px-8 lg:px-12 my-30">
     <h1 class="text-[#034833] text-6xl">Uzbekistondagi mutaxassislar</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mt-12 px-4 sm:px-8 lg:px-16">
@@ -77,7 +80,9 @@ import xizmat from "@/data/xizmatlar_turlari.json"
    
   </section>
 
+  <!-- UstaBozor Qanday ishlaydi? -->
   <section class="workingSession mx-auto sm:px-8 lg:px-12 my-30">
+    
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4">
       <div class="workingSession-left">
         <h1 class="text-4xl sm:text-6xl lg:text-7xl text-[#034833] font-semibold mb-6">
@@ -90,7 +95,7 @@ import xizmat from "@/data/xizmatlar_turlari.json"
       </div>
     </div>
 
-    <div class="relative px-4 sm:px-8 lg:px-16 py-12 max-w-7xl mx-auto">
+    <div class="relative px-4 sm:px-8  py-12  mx-auto">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         
         <!-- Step 1 -->
@@ -124,7 +129,7 @@ import xizmat from "@/data/xizmatlar_turlari.json"
       </div>
 
       <!-- Button -->
-      <div class="mt-16 flex justify-center">
+      <div class="mt-36 flex justify-center">
         <router-link
           to="/ordered"
           class="pi pi-send bg-green-600 text-white px-8 py-4 rounded-full hover:bg-green-700 hover:scale-105 hover:shadow-lg text-xl transition-all duration-300 flex items-center justify-center"
@@ -134,7 +139,7 @@ import xizmat from "@/data/xizmatlar_turlari.json"
       </div>
     </div>
   </section>
-
+  <!-- Footer -->
   <section class="footer bg-[#004333] px-4 sm:px-8 lg:px-12">
     <!-- Social Icons -->
     <div class=" py-10">
