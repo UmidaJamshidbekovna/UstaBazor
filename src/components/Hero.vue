@@ -59,7 +59,7 @@ import xizmat from "@/data/xizmatlar_turlari.json"
 
    <!-- Uzbekistondagi mutaxassislar -->
   <section class="mx-auto sm:px-8 lg:px-12 my-30">
-    <h1 class="text-[#034833] text-6xl ">Uzbekistondagi mutaxassislar</h1>
+    <h1 class="text-[#034833] text-6xl sm:text-3xl">Uzbekistondagi mutaxassislar</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mt-12 px-4 sm:px-8 lg:px-16">
     <div
         v-for="(items, category) in xizmat" 
