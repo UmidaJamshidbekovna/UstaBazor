@@ -1,8 +1,8 @@
 UstaBazor
 
-🛠️ UstaBazor — foydalanuvchilarga o‘zlariga kerakli usta xizmatlarini topishda yordam beruvchi zamonaviy, responsive veb-ilova.
+## 🛠️ UstaBazor — foydalanuvchilarga o‘zlariga kerakli usta xizmatlarini topishda yordam beruvchi zamonaviy, responsive veb-ilova.
 
-🔧 Texnologiyalar
+## 🔧 Texnologiyalar
 Loyiha quyidagi texnologiyalar asosida yaratilgan:
   
   ⚙️ Vue.js — komponent asosidagi JavaScript framework
@@ -19,19 +19,19 @@ Loyiha quyidagi texnologiyalar asosida yaratilgan:
   
   🎞️ Animations & Hover Effects — foydalanuvchi tajribasini yaxshilash uchun
 
-📂 Loyihaning asosiy sahifalari
+## 📂 Loyihaning asosiy sahifalari
   / – Bosh sahifa
   
   /kirish – Kirish (Login) sahifasi
   
   /buyurtma-berish – Buyurtma berish shakli
 
-📸 Ilovadan skrinshotlar
+## 📸 Ilovadan skrinshotlar
 ![{87D29776-F451-4488-857A-5C0285ABAB94}](https://github.com/user-attachments/assets/d502f173-1097-4fe3-a3ec-233a5980e292)
 
   https://ustabazor.netlify.app/
 
-🚀 Ishga tushirish
+## 🚀 Ishga tushirish
 
   bash
   Copy
