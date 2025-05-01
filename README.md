@@ -1,3 +1,19 @@
-=======
-Ustabozor — bu mahalliy ustalar va mijozlarni bog‘lovchi onlayn platforma. Foydalanuvchilar o‘z ehtiyojlariga mos usta topishlari, usta esa xizmatlarini ko‘rsatib, mijozlar bilan bevosita muloqotda bo‘lishi mumkin. Platforma qulay interfeys, izlash va filtr funksiyalari, hamda reyting tizimi bilan jihozlangan.
->>>>>>> 7a3ecb3d454542f973e3090983ded681bcd73b01
+UstaBazor
+🛠️ UstaBazor — foydalanuvchilarga o‘zlariga kerakli usta xizmatlarini topishda yordam beruvchi zamonaviy, responsive veb-ilova.
+
+🔧 Texnologiyalar
+Loyiha quyidagi texnologiyalar asosida yaratilgan:
+
+⚙️ Vue.js — komponent asosidagi JavaScript framework
+
+🎨 Tailwind CSS — utility-first CSS framework
+
+🌐 Vue Router — sahifalar o‘rtasida routing (/kirish, /buyurtma-berish)
+
+📦 Prime Icons — zamonaviy ikonlar to‘plami
+
+🧩 JSON fayldan ma'lumot o‘qish — ustalar ro‘yxati va boshqa ma'lumotlar uchun
+
+📱 Responsive dizayn — barcha ekran o‘lchamlariga moslashgan
+
+🎞️ Animations & Hover Effects — foydalanuvchi tajribasini yaxshilash uchun
